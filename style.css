@@ -1,0 +1,56 @@
+.container {
+  border: 1px solid black;
+  justify-self: center;
+  width: 350px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+.display {
+  height: 25%;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 4em;
+}
+
+.buttons-container {
+  height: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.button {
+  font-size: 2em;
+  width: calc((100% - 36px) / 4);
+  border-radius: 50px;
+  border: 0;
+  background-color: hsl(0, 0%, 33%);
+  color: white;
+}
+
+.button:hover {
+  background-color: hsl(0, 0%, 43%);
+}
+.button:active {
+  background-color: hsl(0, 0%, 33%);
+}
+.zero {
+  flex-grow: 1;
+}
+
+.operator {
+  background-color: hsl(39, 100%, 50%);
+}
+
+.operator:hover {
+  background-color: hsl(39, 100%, 45%);
+}
+
+.operator:active {
+  background-color: hsl(39, 100%, 40%);
+}
